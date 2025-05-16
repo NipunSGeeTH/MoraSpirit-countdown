@@ -18,7 +18,6 @@ Open the [`config.html`](https://nipunsgeeth.github.io/MoraSpirit-countdown/conf
 - Enter the **date and time** when the MoraSpirit 2026 event will begin.
 - This will save the target time to your browser's local storage.
 
-> ⏰ Time is fetched live based on **Colombo Time** using WorldTimeAPI.
 
 ---
 
