@@ -1,0 +1,39 @@
+<!-- SpiritX 2026 Countdown Configuration Page . 
+ First you have to config the date and time the event will held -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Configure Countdown</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Set SpiritX 2026 Event Date</h2>
+    <form id="configForm">
+      <label for="eventDate">Event Date:</label>
+      <input type="datetime-local" id="eventDate" required />
+      <button type="submit">Save</button>
+    </form>
+    <p id="savedMessage"></p>
+  </div>
+  <script>
+    const form = document.getElementById("configForm");
+    const savedMessage = document.getElementById("savedMessage");
+
+    // Load existing date
+    const saved = localStorage.getItem("spiritx_event_date");
+    if (saved) {
+      document.getElementById("eventDate").value = new Date(saved).toISOString().slice(0, 16);
+    }
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const date = document.getElementById("eventDate").value;
+      localStorage.setItem("spiritx_event_date", new Date(date).toISOString());
+      savedMessage.textContent = "Date saved successfully!";
+    });
+  </script>
+</body>
+</html>
