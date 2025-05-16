@@ -3,11 +3,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Configure Countdown</title>
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <div class="container">
     <h2>Set MoraSpirit 2026 Event Date</h2>
@@ -17,10 +19,18 @@
       <button type="submit">Save</button>
     </form>
     <p id="savedMessage"></p>
+    <button id="redirect_button" style="display: none;">Go to Countdown Page</button>
+
   </div>
   <script>
+
+  
+
+
+    const button = document.getElementById("redirect_button");
     const form = document.getElementById("configForm");
     const savedMessage = document.getElementById("savedMessage");
+    const redirectBtn = document.getElementById("redirect_button");
 
     // Load existing date
     const saved = localStorage.getItem("MoraSpirit_event_date");
@@ -28,12 +38,26 @@
       document.getElementById("eventDate").value = new Date(saved).toISOString().slice(0, 16);
     }
 
-    form.addEventListener("submit", function(e) {
+    // Handle form submission
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
       const date = document.getElementById("eventDate").value;
       localStorage.setItem("MoraSpirit_event_date", new Date(date).toISOString());
       savedMessage.textContent = "Date saved successfully!";
-    });
+      redirectBtn.style.display = "inline-block";
+    }
+
+
+    );
+
+      // Redirect to the countdown page when the button is clicked
+    document.getElementById("redirect_button").onclick = function () {
+      window.location.href = "https://nipunsgeeth.github.io/MoraSpirit-countdown/"; // Replace  URL
+    };
+
+
+
   </script>
 </body>
+
 </html>
