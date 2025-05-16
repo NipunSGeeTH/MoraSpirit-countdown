@@ -1,6 +1,6 @@
 # 🕒 MoraSpirit 2026 Countdown Timer
 
-A simple web countdown timer for the upcoming **MoraSpirit SpiritX 2026** event.
+A simple web countdown timer for the upcoming **MoraSpirit MoraSpirit 2026** event.
 
 This project uses only:
 - `index.html`
@@ -13,7 +13,7 @@ This project uses only:
 ## 🔧 How to Use
 
 ### 1. Configure the Event Date & Time
-Open the [`config.html`](./config.html) page in your browser.
+Open the [`config.html`](https://nipunsgeeth.github.io/MoraSpirit-countdown/config.html) page in your browser.
 
 - Enter the **date and time** when the MoraSpirit 2026 event will begin.
 - This will save the target time to your browser's local storage.
@@ -23,7 +23,7 @@ Open the [`config.html`](./config.html) page in your browser.
 ---
 
 ### 2. View the Countdown
-Now open the [`index.html`](./index.html) page.
+Now open the [`index.html`](https://nipunsgeeth.github.io/MoraSpirit-countdown/) page.
 
 - The countdown timer will show **Days : Hours : Minutes : Seconds** until the event starts.
 - If the event date has passed, it will display an appropriate message.
@@ -42,11 +42,7 @@ Now open the [`index.html`](./index.html) page.
 ---
 
 ## 🚀 Demo (if hosted)
-[Live Demo Link](https://your-username.github.io/spiritx-countdown)
+[Live Demo Link](https://nipunsgeeth.github.io/MoraSpirit-countdown/)
 
 ---
 
-## 📅 Example Event Date
-
-```txt
-March 1, 2026 — 9:00 AM Colombo Time (GMT+5:30)

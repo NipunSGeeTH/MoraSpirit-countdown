@@ -1,5 +1,5 @@
 function updateCountdown() {
-  const eventDateStr = localStorage.getItem("spiritx_event_date");
+  const eventDateStr = localStorage.getItem("MoraSpirit_event_date");
   const countdownEl = document.getElementById("countdown");
   const messageEl = document.getElementById("message");
 
@@ -19,7 +19,7 @@ function updateCountdown() {
 
   if (diff <= 0) {
     countdownEl.textContent = "00:00:00:00";
-    messageEl.textContent = "🎉 SpiritX 2026 has started!";
+    messageEl.textContent = "🎉 MoraSpirit 2026 has started!";
     return;
   }
 
