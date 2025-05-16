@@ -13,7 +13,7 @@ This project uses only:
 ## 🔧 How to Use
 
 ### 1. Configure the Event Date & Time
-Open the [`Configure Page `](https://nipunsgeeth.github.io/MoraSpirit-countdown/config.html) page in your browser.
+Open the [`Configure Page `](https://nipunsgeeth.github.io/MoraSpirit-countdown/config.html ) page in your browser.
 
 - Enter the **date and time** when the MoraSpirit 2026 event will begin.
 - This will save the target time to your browser's local storage.
