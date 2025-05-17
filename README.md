@@ -40,7 +40,7 @@ Now open the [`Countdown Page `](https://nipunsgeeth.github.io/MoraSpirit-countd
 
 ---
 
-## 🚀 Demo (if hosted)
+## 🚀 Demo
 [Live Demo Link](https://nipunsgeeth.github.io/MoraSpirit-countdown/)
 
 ---
